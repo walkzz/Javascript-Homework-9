@@ -60,3 +60,11 @@ class Rectangle {
 const rect1 = new Rectangle('Red', 5, 10);
 const rect2 = new Rectangle('Blue', 3, 6);
 const rect3 = new Rectangle('Green', 7, 8);
+console.log(Rectangle.getShapeType());
+// printing rectangle properties
+rect1.describe();
+console.log(`Area: ${rect1.getArea()}`);
+rect2.describe();
+console.log(`Area: ${rect2.getArea()}`);
+rect3.describe();
+console.log(`Area: ${rect3.getArea()}`);
