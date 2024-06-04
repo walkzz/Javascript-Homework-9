@@ -34,4 +34,7 @@ class BankAccount {
             console.error("Withdrawal amount must be positive.");
         }
     }
+    getBalance() {
+        return this.balance;
+    }
 }
