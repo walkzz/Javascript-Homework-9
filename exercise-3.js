@@ -22,4 +22,16 @@ class BankAccount {
             console.error("Deposit amount must be positive!");
         }
     }
+    withdraw(amount) {
+        if (amount > 0) {
+            if (amount <= this.balance) {
+                this.balance -= amount;
+                console.log(`Withdrew: $${amount}. New balance: $${this.balance}.`);
+            } else {
+                console.error("Withdrawal amount exceeds current balance.");
+            }
+        } else {
+            console.error("Withdrawal amount must be positive.");
+        }
+    }
 }
