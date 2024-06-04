@@ -28,10 +28,10 @@ class BankAccount {
                 this.balance -= amount;
                 console.log(`Withdrew: $${amount}. New balance: $${this.balance}.`);
             } else {
-                console.error("Withdrawal amount exceeds current balance.");
+                console.error("Withdrawal amount exceeds current balance!");
             }
         } else {
-            console.error("Withdrawal amount must be positive.");
+            console.error("Withdrawal amount must be positive!");
         }
     }
     getBalance() {
