@@ -14,4 +14,12 @@ class BankAccount {
         this.accountHolder = accountHolder;
         this.balance = balance;
     }
+    deposit(amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            console.log(`Deposited: $${amount}. New balance: $${this.balance}.`);
+        } else {
+            console.error("Deposit amount must be positive!");
+        }
+    }
 }
