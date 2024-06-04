@@ -56,3 +56,7 @@ class Rectangle {
         console.log(`Color: ${this.color}, Width: ${this.#width}, Height: ${this.#height}`);
     }
 }
+// creating instances
+const rect1 = new Rectangle('Red', 5, 10);
+const rect2 = new Rectangle('Blue', 3, 6);
+const rect3 = new Rectangle('Green', 7, 8);
