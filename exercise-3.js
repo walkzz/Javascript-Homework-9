@@ -8,3 +8,10 @@
 
 // Креирајте два примероци од класата BankAccount и извршете некои трансакции (депозити и повлекувања).
 
+class BankAccount {
+    constructor(accountNumber, accountHolder, balance = 0) { // default balance is 0
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
+}
