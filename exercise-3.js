@@ -38,3 +38,12 @@ class BankAccount {
         return this.balance;
     }
 }
+// first instance of BankAccount
+const acc1 = new BankAccount('999998', 'John', 500);
+console.log(`Account Holder: ${acc1.accountHolder}, Balance: $${acc1.getBalance()}`);
+
+// doing transactions // testing on first account
+acc1.deposit(200);
+acc1.withdraw(100);
+acc1.withdraw(700);
+console.log(`Final Balance for ${acc1.accountHolder}: $${acc1.getBalance()}`);
