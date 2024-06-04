@@ -10,10 +10,26 @@ class Animal{
         this.name = name;
         this.breed = species;
     }
-    bark(){
+    sound(){
         return `${this.name} makes a sound.`;
     }
     info(){
         return `${this.name} is a ${this.species}.`;
+    }
+}
+//extending the class "Animals"
+class Dog extends Animal {
+    constructor(name, breed, age) {
+        super(name, 'Dog');
+        this.breed = breed;
+        this.age = age;
+    }
+
+    bark() {
+        return `${this.name} barks loudly!`;
+    }
+
+    info() {
+        return `${this.name} is a ${this.age} year old ${this.breed}.`;
     }
 }
