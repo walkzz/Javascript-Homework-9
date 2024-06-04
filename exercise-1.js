@@ -26,7 +26,7 @@ class Dog extends Animal {
     }
 
     bark() {
-        return `${this.name} barks loudly!`; // woof x3 xdd!!!
+        return `${this.name} barks loudly!`; // woof x3 xDD!!!
     }
 
     info() {
