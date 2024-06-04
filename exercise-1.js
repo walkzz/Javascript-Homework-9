@@ -8,7 +8,7 @@
 class Animal{
     constructor(name, species){
         this.name = name;
-        this.breed = species;
+        this.species = species;
     }
     sound(){
         return `${this.name} makes a sound.`;
@@ -26,10 +26,19 @@ class Dog extends Animal {
     }
 
     bark() {
-        return `${this.name} barks loudly!`;
+        return `${this.name} barks loudly!`; // woof x3 xdd!!!
     }
 
     info() {
         return `${this.name} is a ${this.age} year old ${this.breed}.`;
     }
 }
+// creating an instance of Animal class
+const randomAnimal = new Animal("Random Animal", "Unknown Species");
+console.log(randomAnimal.sound());
+console.log(randomAnimal.info());
+// creating a instance of Dog class
+const buddy = new Dog("Big Doggo", "Golden Retriever", 6);
+console.log(buddy.sound());
+console.log(buddy.bark());
+console.log(buddy.info());
