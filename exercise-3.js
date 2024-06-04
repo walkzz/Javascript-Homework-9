@@ -47,3 +47,14 @@ acc1.deposit(200);
 acc1.withdraw(100);
 acc1.withdraw(700);
 console.log(`Final Balance for ${acc1.accountHolder}: $${acc1.getBalance()}`);
+
+// second instance of BankAccount
+const acc2 = new BankAccount('9863731', 'Kendrick', 1000);
+console.log("-------------------------------------------------------")
+console.log(`Account Holder: ${acc2.accountHolder}, Balance: $${acc2.getBalance()}`);
+
+// doing transactions // testing on second account
+acc2.deposit(300);
+acc2.withdraw(400);
+acc2.withdraw(1000);
+console.log(`Final Balance for ${acc2.accountHolder}: $${acc2.getBalance()}`);
