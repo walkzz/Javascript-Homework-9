@@ -5,3 +5,15 @@
 // Да се направат инстанци од двете класи и да се повикаат соодветните методи. 
 // Својствата и методите ги дефинирате вие сами.
 
+class Animal{
+    constructor(name, species){
+        this.name = name;
+        this.breed = species;
+    }
+    bark(){
+        return `${this.name} makes a sound.`;
+    }
+    info(){
+        return `${this.name} is a ${this.species}.`;
+    }
+}
